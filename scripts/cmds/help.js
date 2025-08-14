@@ -3,7 +3,7 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "[ 🌟 | 𝗥𝗔𝗬𝗛𝗔𝗡-𝗕𝗢𝗧 ]";
+const doNotDelete = "[ 🌟 | 𝗚𝗢𝗞𝗨-𝗕𝗟𝗔𝗖𝗞 ]";
 
 module.exports = {
   config: {
@@ -34,7 +34,7 @@ module.exports = {
       const categories = {};
       let msg = "";
 
-      msg += `╔═══════════╗\n     𝗥𝗔𝗬𝗛𝗔𝗡-𝗕𝗢𝗧🌟\n╚═══════════╝`;
+      msg += `╔═══════════╗\n     𝗚𝗢𝗞𝗨-𝗕𝗟𝗔𝗖𝗞🌟\n╚═══════════╝`;
 
       for (const [name, value] of commands) {
           if (value.config.role > 1 && role < value.config.role) continue;
@@ -60,8 +60,8 @@ module.exports = {
 
       const totalCommands = commands.size;
       msg += `\n𝗖𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆, 𝘁𝗵𝗲 𝗯𝗼𝘁 𝗵𝗮𝘀 ${totalCommands} 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝘁𝗵𝗮𝘁 𝗰𝗮𝗻 𝗯𝗲 𝘂𝘀𝗲𝗱\n`;
-      msg += `𝗧𝘆𝗽𝗲 ${prefix}𝗵𝗲𝗹𝗽 [𝗥𝗔𝗬𝗛𝗔𝗡-/𝗕𝗢𝗧] 𝘁𝗼 𝘃𝗶𝗲𝘄 𝘁𝗵𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗼𝗳 𝘁𝗵𝗮𝘁 𝗰𝗼𝗺𝗺𝗮𝗻𝗱\n`;
-      msg += `🌟 | 𝗥𝗔𝗬𝗛𝗔𝗡-𝗕𝗢𝗧 `;
+      msg += `𝗧𝘆𝗽𝗲 ${prefix}𝗵𝗲𝗹𝗽 [𝗚𝗢𝗞𝗨-/𝗕𝗟𝗔𝗖𝗞] 𝘁𝗼 𝘃𝗶𝗲𝘄 𝘁𝗵𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗼𝗳 𝘁𝗵𝗮𝘁 𝗰𝗼𝗺𝗺𝗮𝗻𝗱\n`;
+      msg += `🌟 | 𝗚𝗢𝗞𝗨-𝗕𝗟𝗔𝗖𝗞 `;
 
 
       const helpListImages = [
@@ -133,4 +133,4 @@ function roleTextToString(roleText) {
     default:
       return "Unknown role";
   }
-      }
+}
