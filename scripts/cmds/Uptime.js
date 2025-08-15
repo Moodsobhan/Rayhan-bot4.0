@@ -81,7 +81,7 @@ module.exports = {
 💬 𝗠𝗢𝗧𝗜𝗩𝗔𝗧𝗜𝗢𝗡
 ${randomQuote}
 
-   〔 ✦ RX JIBON ✦ 〕
+   〔 ✦ RAYHAN ✦ 〕
 `;
 
       await delay(300);
