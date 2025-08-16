@@ -1,64 +1,64 @@
-const axios = require('axios');
 const fs = require('fs');
-const path = require('path');
+const moment = require('moment-timezone');
 
 module.exports = {
-config: {
-  name: "owner",
-  aurthor:"MR.AYAN",// Convert By Goatbot MR.AYAN 
-   role: 0,
-  shortDescription: " ",
-  longDescription: "",
-  category: "admin",
-  guide: "{pn}"
-},
+	config: {
+		name: "info",
+   aliases: ["owner", "botinfo" ],
+		version: "1.0",
+		author: "NTKhang",
+		countDown: 20,
+		role: 0,
+		shortDescription: { vi: "", en: "" },
+		longDescription: { vi: "", en: "" },
+		category: "owner",
+		guide: { en: "" },
+		envConfig: {}
+	},
+	onStart: async function ({ message }) {
+		const authorName = " ⩸_ 𝙽𝙸 𝚂 𝙰𝙽 _⩸ ";
+		const ownAge = "『 ⩸_ 20 _⩸ 』";
+		const messenger = " //m.me/god.damn.rayhan";
+		const authorFB = " https://www.facebook.com/god.damn.rayhan";
+		const authorNumber = "017××××××98";
+		const Status = "⩸__𝚂𝚒𝚗𝚐𝚕𝚎__⩸";
+		const urls = [
+"https://drive.google.com/file/d/1THz5Ak2Dx5gDyEaf_QPwkBpFh3B6-vsw/view?usp=drivesdk",
+"https://drive.google.com/file/d/1THz5Ak2Dx5gDyEaf_QPwkBpFh3B6-vsw/view?usp=drivesdk"
+];
+		const link = urls[Math.floor(Math.random() * urls.length)];
+		const now = moment().tz('Asia/Jakarta');
+		const date = now.format('MMMM Do YYYY');
+		const time = now.format('h:mm:ss A');
+		const uptime = process.uptime();
+		const seconds = Math.floor(uptime % 60);
+		const minutes = Math.floor((uptime / 60) % 60);
+		const hours = Math.floor((uptime / (60 * 60)) % 24);
+		const days = Math.floor(uptime / (60 * 60 * 24));
+		const uptimeString = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
 
-  onStart: async function ({ api, event }) {
-  try {
-    const ownerInfo = {
-      name: '𝚁𝙰𝚈𝙷𝙰𝙽 𝙲𝙷𝙾𝚆𝙳𝙷𝚄𝚁𝚈',
-      gender: '𝙼𝙰𝙻𝙴',
-      age: '𝟭𝟴+',
-      height: 'secret',
-      facebookLink: 'https://www.facebook.com/god.damn.rayhan',
-      nick: '°×𝗕𝗟𝗔𝗭𝗘-𝗦𝗘𝗡𝗦𝗘𝗜×°'
-    };
-
-    const bold = 'https://i.postimg.cc/j5jpDwyt/Messenger-creation-0404-FF87-11-CC-432-C-963-A-6-E1-FCEA9-E6-BE.jpg '; // Replace with your Google Drive videoid link https://drive.google.com/uc?export=download&id=here put your video id
-
-    const tmpFolderPath = path.join(__dirname, 'tmp');
-
-    if (!fs.existsSync(tmpFolderPath)) {
-      fs.mkdirSync(tmpFolderPath);
-    }
-
-    const videoResponse = await axios.get(bold, { responseType: 'arraybuffer' });
-    const videoPath = path.join(tmpFolderPath, 'owner_video.gif');
-
-    fs.writeFileSync(videoPath, Buffer.from(videoResponse.data, 'binary'));
-
-    const response = `
-Owner Information:🧾
-Name: ${ownerInfo.name}
-Gender: ${ownerInfo.gender}
-Age: ${ownerInfo.age}
-Height: ${ownerInfo.height}
-Facebook: ${ownerInfo.facebookLink}
-Nick: ${ownerInfo.nick}
-`;
-
-
-    await api.sendMessage({
-      body: response,
-      attachment: fs.createReadStream(videoPath)
-    }, event.threadID, event.messageID);
-
-    if (event.body.toLowerCase().includes('ownerinfo')) {
-      api.setMessageReaction('✅', event.messageID, (err) => {}, true);
-    }
-  } catch (error) {
-    console.error('Error in ownerinfo command:', error);
-    return api.sendMessage('An error occurred while processing the command.', event.threadID);
-  }
-},
+		message.reply({
+			body: `✨《 𝐁𝐨𝐭 𝐀𝐧𝐝 𝐎𝐰𝐧𝐞𝐫 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 》🎀
+\🤖彡𝐵𝑜𝑡 𝑁𝑎𝑚𝑒 :  ${global.GoatBot.config.nickNameBot}
+\👾彡𝐵𝑜𝑡 𝑆𝑦𝑠𝑡𝑒𝑚 𝑃𝑟𝑒𝑓𝑖𝑥 : ${global.GoatBot.config.prefix}
+\💙彡𝑂𝑤𝑛𝑒𝑟 𝑁𝑎𝑚𝑒 : ${authorName}
+\📝彡𝐴𝑔𝑒  : ${ownAge}
+\💕彡𝑅𝑒𝑙𝑎𝑡𝑖𝑜𝑛𝑆ℎ𝑖𝑝: ${Status}
+\🌐彡𝑊𝑝 : ${authorNumber}
+\🌍彡𝐹𝑎𝑐𝑒𝑏𝑜𝑜𝑘 𝐿𝑖𝑛𝑘 :  ${authorFB}
+\🗓彡𝐷𝑎𝑡𝑒 : ${date}
+\⏰彡𝑁𝑜𝑤 𝑇𝑖𝑚𝑒 : ${time}
+\🔰彡𝐴𝑛𝑦 𝐻𝑒𝑙𝑝 𝐶𝑜𝑛𝑡𝑎𝑐𝑡 : ${messenger}__⩸
+\📛彡𝐵𝑜𝑡 𝐼𝑠 𝑅𝑢𝑛𝑛𝑖𝑛𝑔 𝐹𝑜𝑟 : ${uptimeString}
+    𝑻𝒈:  //t.me/Rayhan
+    𝑰𝒏𝒔𝒕𝒂:  //www.instagram.com/im_editz_x2.0?
+\===============`,
+			attachment: await global.utils.getStreamFromURL(link)
+		});
+	},
+	onChat: async function ({ event, message, getLang }) {
+		if (event.body && event.body.toLowerCase() === "info") {
+			this.onStart({ message });
+		}
+	}
 };
