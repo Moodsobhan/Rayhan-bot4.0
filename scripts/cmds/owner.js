@@ -23,8 +23,8 @@ module.exports = {
 		const authorNumber = "017××××××98";
 		const Status = "⩸__𝚂𝚒𝚗𝚐𝚕𝚎__⩸";
 		const urls = [
-"https://drive.google.com/file/d/1THz5Ak2Dx5gDyEaf_QPwkBpFh3B6-vsw/view?usp=drivesdk",
-"https://drive.google.com/file/d/1THz5Ak2Dx5gDyEaf_QPwkBpFh3B6-vsw/view?usp=drivesdk"
+"https://i.postimg.cc/6Qzqvm1R/Screenshot-20250816-145821-Messenger.jpg",
+"https://i.postimg.cc/6Qzqvm1R/Screenshot-20250816-145821-Messenger.jpg"
 ];
 		const link = urls[Math.floor(Math.random() * urls.length)];
 		const now = moment().tz('Asia/Jakarta');
