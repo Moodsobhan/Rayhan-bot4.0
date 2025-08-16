@@ -34,7 +34,7 @@ module.exports = {
       const categories = {};
       let msg = "";
 
-      msg += `╔═══════════╗\n     𝗚𝗢𝗞𝗨-𝗕𝗟𝗔𝗖𝗞🌟\n╚═══════════╝`;
+      msg += `╔═══════════╗\n     𝗕𝗟𝗔𝗭𝗘-𝗦𝗘𝗡𝗦𝗘𝗜🌟\n╚═══════════╝`;
 
       for (const [name, value] of commands) {
           if (value.config.role > 1 && role < value.config.role) continue;
@@ -65,11 +65,11 @@ module.exports = {
 
 
       const helpListImages = [
-        "https://i.postimg.cc/9FQCBFSB/f10c9b7b0eabc3067ebbc700e5f3e4b1.jpg", // add image link here
-        "https://i.postimg.cc/sXWqcb9y/b33292e270f53f1d49ac29c2361ca559.jpg",
-        "https://i.postimg.cc/NGp7npJw/c8a5f878e8c7e467b5e88a921fa1cd22.jpg",
-        "https://i.postimg.cc/0jnsYLPj/c1cec1609f6bb272fa85b19aa4182475.jpg",
-        "https://i.postimg.cc/0jnsYLPj/c1cec1609f6bb272fa85b19aa4182475.jpg",
+        "https://i.postimg.cc/9fhf4hmJ/Messenger-creation-8915-D328-34-C8-49-C2-835-F-6-C85-DC653-F9-E.jpg", // add image link here
+        "https://i.postimg.cc/GhjRMydJ/Messenger-creation-9-CDAA175-C238-4-E8-C-82-FE-D24-E73-AE9887.jpg",
+        "https://i.postimg.cc/vHGF6Zf1/Messenger-creation-83-EDD54-C-C985-4-C46-BE2-A-2-C8892836-BDC.jpg",
+        "https://i.imgur.com/uqTAHRl.jpeg",
+        "https://i.imgur.com/ez8TyJn.jpeg",
         // Add more image links as needed
       ];
 
