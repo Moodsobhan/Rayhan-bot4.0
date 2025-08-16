@@ -16,7 +16,7 @@ module.exports = {
 		envConfig: {}
 	},
 	onStart: async function ({ message }) {
-		const authorName = " ⩸_ 𝙽𝙸 𝚂 𝙰𝙽 _⩸ ";
+		const authorName = " ⩸_ 𝚁𝙰𝚈𝙷𝙰𝙽 𝙲𝙷𝙾𝚆𝙳𝙷𝚄𝚁𝚈 _⩸ ";
 		const ownAge = "『 ⩸_ 20 _⩸ 』";
 		const messenger = " //m.me/god.damn.rayhan";
 		const authorFB = " https://www.facebook.com/god.damn.rayhan";
@@ -51,7 +51,7 @@ module.exports = {
 \🔰彡𝐴𝑛𝑦 𝐻𝑒𝑙𝑝 𝐶𝑜𝑛𝑡𝑎𝑐𝑡 : ${messenger}__⩸
 \📛彡𝐵𝑜𝑡 𝐼𝑠 𝑅𝑢𝑛𝑛𝑖𝑛𝑔 𝐹𝑜𝑟 : ${uptimeString}
     𝑻𝒈:  //t.me/Rayhan
-    𝑰𝒏𝒔𝒕𝒂:  //www.instagram.com/im_editz_x2.0?
+    𝑰𝒏𝒔𝒕𝒂:  // instagram://user/?username=god_damn_rayhan
 \===============`,
 			attachment: await global.utils.getStreamFromURL(link)
 		});
