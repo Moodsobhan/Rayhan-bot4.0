@@ -68,8 +68,8 @@ module.exports = {
         "https://i.postimg.cc/9fhf4hmJ/Messenger-creation-8915-D328-34-C8-49-C2-835-F-6-C85-DC653-F9-E.jpg", // add image link here
         "https://i.postimg.cc/GhjRMydJ/Messenger-creation-9-CDAA175-C238-4-E8-C-82-FE-D24-E73-AE9887.jpg",
         "https://i.postimg.cc/vHGF6Zf1/Messenger-creation-83-EDD54-C-C985-4-C46-BE2-A-2-C8892836-BDC.jpg",
-        "https://i.imgur.com/uqTAHRl.jpeg",
-        "https://i.imgur.com/ez8TyJn.jpeg",
+        "https://i.postimg.cc/j5jpDwyt/Messenger-creation-0404-FF87-11-CC-432-C-963-A-6-E1-FCEA9-E6-BE.jpg",
+        "https://i.postimg.cc/6Qzqvm1R/Screenshot-20250816-145821-Messenger.jpg",
         // Add more image links as needed
       ];
 
