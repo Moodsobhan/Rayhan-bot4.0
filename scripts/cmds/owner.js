@@ -23,8 +23,8 @@ module.exports = {
 		const authorNumber = "017××××××98";
 		const Status = "⩸__ 𝚁𝙻𝚂 𝚆𝙷𝙸𝚃 𝙵𝙰𝚁𝙸𝚈𝙰__⩸";
 		const urls = [
-"https://drive.google.com/uc?id=1a72QhBuup4I3IcYhDblJBe1D__fyIh4k",
-"https://drive.google.com/uc?id=1WPeoXpdO7OZ1y9NiyGgYdwsQawV21Oju"
+"https://i.postimg.cc/6Qzqvm1R/Screenshot-20250816-145821-Messenger.jpg",
+"https://i.postimg.cc/6Qzqvm1R/Screenshot-20250816-145821-Messenger.jpg"
 ];
 		const link = urls[Math.floor(Math.random() * urls.length)];
 		const now = moment().tz('Asia/Jakarta');
